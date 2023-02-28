@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.headder {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+.logo {
+    padding-left: 2rem;
+}
+
+ul {
+    margin-right: auto;
+}
+
+/*.navbar{
+     padding-right: 30rem;
+}*/
+.headder ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0.2rem 0 0 2rem;
+    padding: 0 5rem;
+}
+
+.headder ul li a {
+    text-decoration: none;
+    color: rgb(165, 165, 167);
+}
+
+.headder ul li {
+    list-style: none;
+}
+
+.profile {
+    max-width: 25%;
+}
+
+.cartandprofile {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+}
+
+.fa-solid {
+    padding-top: 0.7rem;
+}
+
+.flexx {
+    display: flex;
+}
+
+
+
+hr {
+    width: 75%;
+    margin: auto;
+}
+
+
+
+/* .container{
+    display: flex;
+    flex-direction: row;
+}
+.bigimage{
+    display: flex;
+    justify-content: center;
+    margin-left: 5rem;
+}
+.images{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+.miniviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: 4.6rem;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+.companyname{
+    font-size: 1rem;
+    font-weight: 600;
+    color: hsl(26, 100%, 55%);
+}
+.title{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+} */
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    flex-wrap: nowrap;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    margin: 5rem 0 0 6rem;
+    gap: 1rem;
+}
+
+.bigimage {
+    display: flex;
+    justify-content: center;
+}
+
+.displayproductimage {
+    max-width: 50%;
+}
+
+.miniviews {
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.miniviews img {
+    max-width: 75%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    max-width: 30%;
+}
+
+.oneimg,
+.twoimg,
+.threeimg,
+.fourimg {
+    margin: auto;
+}
+
+.oneimg,
+.twoimg,
+.threeimg,
+.fourimg,
+.displayproductimage {
+    border-radius: 1rem;
+}
+
+.companyyname {
+    font-size: 1rem;
+    font-weight: 600;
+    color: hsl(26, 100%, 55%);
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.flexxone {
+    display: flex;
+    gap: 2rem;
+}
+
+.discount {
+    color: hsl(26, 100%, 55%);
+    background-color: hsl(25, 100%, 94%);
+    padding: 0.3rem 0.7rem 0 0.7rem;
+    font-weight: 700;
+}
+
+.originalprice {
+    text-decoration: line-through;
+    padding: 1rem 0;
+    color: rgb(165, 165, 167);
+}
+
+.incart {
+    display: flex;
+    margin: 2rem 0;
+    width: 45%;
+    background-color: rgba(165, 165, 167, 0.300);
+    border-radius: 1rem;
+    justify-content: space-around;
+}
+
+.remove,
+.add {
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.remove {
+    border-radius: 1rem 0 0 1rem;
+    padding-left: 1.5rem;
+}
+
+.add {
+    border-radius: 0 1rem 1rem 0;
+    padding-right: 1.5rem;
+}
+
+.displayquantity {
+    padding: 0.8rem 3rem;
+    padding-top: 1.1rem;
+}
+
+.description {
+    color: rgb(165, 165, 167);
+    margin: 0.5rem auto 2rem auto;
+}
+
+.discountedprice {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.incartandaddtocart {
+    display: flex;
+    gap: 5rem;
+}
+
+.addtocart {
+    margin-top: 2.1rem;
+    color: white;
+    font-weight: 400;
+    background-color: hsl(26, 100%, 55%);
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    max-height: 3rem !important;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 50rem) {
+    .headder div ul {
+        display: none;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .bigimage {
+        margin: 0 auto;
+    }
+
+    .displayproductimage {
+        max-width: 100%;
+    }
+
+    .images {
+        margin: auto;
+        max-width: 100%;
+    }
+
+    .oneimg,
+    .twoimg,
+    .threeimg,
+    .fourimg,
+    .displayproductimage {
+        border-radius: 0;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .miniviews {
+        display: none;
+    }
+
+    .text {
+        margin: 2rem auto;
+        max-width: 90%;
+    }
+
+    .price {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .discount {
+        padding: auto 0.2rem;
+    }
+
+    .originalprice {
+        padding: 0.3rem 0;
+    }
+
+    .incartandaddtocart {
+        margin-top: 3rem;
+    }
+
+    .incartandaddtocart {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .addtocart,.incart {
+        width: 90%;
+        margin: 0;
+        gap: 0;
+    }
+    .addtocart{
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .fa-solid{
+        padding-bottom: 0.5rem;
+    }
+}

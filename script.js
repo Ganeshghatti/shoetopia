@@ -1,0 +1,1 @@
+document.getElementsByClassName("displayquantity")[0].innerHTML="0"
