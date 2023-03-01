@@ -436,8 +436,7 @@ hr {
 
     .addtocart,.incart {
         width: 90%;
-        margin: 0;
-        gap: 0;
+        margin:auto 1.6rem auto 0;
     }
     .addtocart{
         padding: 1.5rem;
