@@ -4,7 +4,9 @@
     font-family: 'Kumbh Sans', sans-serif;
     /* box-sizing: border-box; */
 }
-
+.parentofheadder{
+    position: relative;
+}
 .headder {
     display: flex;
     align-items: center;
@@ -22,9 +24,6 @@ ul {
     margin-right: auto;
 }
 
-/*.navbar{
-     padding-right: 30rem;
-}*/
 .headder ul {
     display: flex;
     flex-direction: row;
@@ -52,12 +51,98 @@ ul {
     margin-bottom: 0.5rem;
 }
 
-.fa-solid {
-    padding-top: 0.7rem;
-}
-
 .flexx {
     display: flex;
+}
+.cartitemsbutton{
+    border: none;
+    padding-top: 0.7rem;
+    background-color: inherit;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#emptycart{
+    position: absolute;
+    left: 75%;
+    top: 75%;
+    max-width: 40%;
+    box-shadow: 3px 2px rgb(165, 165, 167);
+    border: grey 2px solid ;
+    background-color: white;
+    display: none;
+    border-radius: 1rem;
+}
+.cartheaddingone{
+    font-weight: 700;
+    border-bottom:  rgb(165, 165, 167) 1px solid;
+    padding: 0.8rem 0 1.4rem 1rem;
+}
+.cartheaddingtwo{
+    font-weight: 700;
+    border-bottom:  rgb(165, 165, 167) 1px solid;
+    padding: 0.8rem 0 1.4rem 1rem;
+}
+.yourcartisempty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 4rem;
+}
+#notanemptycart{
+    position: absolute;
+    left: 75%;
+    top: 75%;
+    max-width: 17.5%;
+    box-shadow: 3px 2px rgb(165, 165, 167);
+    border: grey 2px solid ;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+.productdescriptionincartflexone{
+    display: flex;
+    flex-direction: row;
+
+}
+.productdescriptionincart{
+    padding: 1.5rem 0 3.5rem 1rem;
+}
+.textinsidecart{
+    margin: auto;
+}
+.divforimgincart{
+    max-width: 30%;
+    margin: auto;
+}
+.productdescriptionincartflexone img{
+    max-width: 70%;
+    border-radius: 1rem;
+}
+.checkoutinsidecart{
+    width: 80%;
+    margin: auto;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 1rem;
+    color: white;
+    font-weight: 700;
+    padding: 0.8rem 0;
+    margin: 0 auto 1rem auto;
+    cursor: pointer;
+    box-shadow: 2px 2px rgb(165, 165, 167);
+}
+.checkoutinsidecartdiv{
+    display: flex;
+}
+.pricedivinsidecart{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: auto;
+}
+.productnameincart,.pricedivinsidecart{
+    font-size: clamp(0.8rem, 3vw, 1rem);
 }
 
 
@@ -133,7 +218,28 @@ hr {
 .displayproductimage {
     max-width: 50%;
 }
+.oneimg:hover{
+    opacity: 50%;
+    border:hsl(26, 100%, 55%) 3px solid ;
+}
+.twoimg:hover{
+    opacity: 50%;
+    border:hsl(26, 100%, 55%) 3px solid ;
+}
+.threeimg:hover{
+    opacity: 50%;
+    border:hsl(26, 100%, 55%) 3px solid ;
+}
+.fourimg:hover{
+    opacity: 50%;
+    border:hsl(26, 100%, 55%) 3px solid ;
+}
 
+
+.displayproductimagetwo,.displayproductimagethree,.displayproductimagefour{
+    display: none;
+    padding: 0;
+}
 .miniviews {
     max-width: 50%;
     display: flex;
@@ -151,7 +257,7 @@ hr {
 .text {
     display: flex;
     flex-direction: column;
-    margin-top: 8rem;
+    margin-top: 6rem;
     max-width: 30%;
 }
 
@@ -160,6 +266,7 @@ hr {
 .threeimg,
 .fourimg {
     margin: auto;
+    cursor: pointer;
 }
 
 .oneimg,
@@ -261,9 +368,6 @@ hr {
     justify-content: space-between;
     gap: 0.3rem;
 }
-.fa-solid{
-    padding-bottom: 0.5rem;
-}
 .incart,.addtocart{
     box-shadow: 5px 5px rgb(165, 165, 167);
 }
@@ -275,7 +379,9 @@ hr {
     .headder div ul {
         display: none;
     }
-
+    .headder{
+        padding:1rem 0;
+    }
     .container {
         flex-wrap: wrap;
     }
@@ -346,7 +452,20 @@ hr {
         display: flex;
         justify-content: space-evenly;
     }
-    .fa-solid{
-        padding-bottom: 0.5rem;
+    #emptycart{
+        margin: auto;
+        max-width: 200%;
+        width: 95%;
+        left: 1.5%;
+    }
+    #notanemptycart{
+        margin: auto;
+        max-width: 200%;
+        width: 95%;
+        left: 1.5%;
+    }
+    .productnameincart,.pricedivinsidecart{
+        margin: auto;
+        font-size: 1.1rem;
     }
 }

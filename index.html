@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="parentofheadder">
     <div class="headder">
         <div class="flexx">
       <div class="logo"><img src="/logo.png" alt="logo"></div>
@@ -28,21 +29,42 @@
       </nav>
     </div>
         <div class="cartandprofile">
-          <button type="button"><i class="fa-solid fa-cart-shopping"></i></button>
-          <img src="image-avatar.png" alt="avatar" class="profile" />
+          <button type="button" class="cartitemsbutton"><i class="fa-solid fa-cart-shopping"></i></button>
+          <img src="/image-avatar.png" alt="avatar" class="profile" />
         </div>
+    </div>
+      <div class="cartitems">
+        <div id="emptycart"><p class="cartheaddingone">Cart</p><p class="yourcartisempty">Your Cart is Empty</p></div>
+        <div id="notanemptycart">
+            <div class="cartheaddingtwo">Cart</div>
+            <div class="productdescriptionincart">
+              <div class="productdescriptionincartflexone">
+                <div class="divforimgincart"><img src="/image-product-1-thumbnail.jpg" class="imgofproductinsidecart" alt="product image"></div>
+                <div class="textinsidecart"><p class="productnameincart">Fall Limited Edition Sneakers</p>
+                <div class="pricedivinsidecart">
+                  <p class="priceofoneproductinsidecart">$125.00*</p>
+                  <div class="quantityofproductinsidecart"></div>
+                  <div class="finalpriceinsidecart"></div></div></div>
+            </div>
+            </div>
+            <div class="checkoutinsidecartdiv"><button class="checkoutinsidecart">Checkout</button></div>
+        </div>
+      </div>
     </div>
 
     <hr>
 
     <div class="container">
       <div class="images">
-        <div class="bigimage"><img src="image-product-1.jpg" alt="product" class="displayproductimage"></div>
+        <div class="bigimage"><img src="/image-product-1.jpg" alt="product" class="displayproductimageone displayproductimage">
+                              <img src="/image-product-2.jpg" alt="product" class="displayproductimagetwo displayproductimage">
+                              <img src="/image-product-3.jpg" alt="product" class="displayproductimagethree displayproductimage">
+                              <img src="/image-product-4.jpg" alt="product" class="displayproductimagefour displayproductimage"></div>
         <div class="miniviews">
-          <div class="one"><img src="image-product-1-thumbnail.jpg" alt="one" class="oneimg"></div>
-          <div class="two"><img src="image-product-2-thumbnail.jpg" alt="one" class="twoimg"></div>
-          <div class="three"><img src="image-product-3-thumbnail.jpg" alt="one" class="threeimg"></div>
-          <div class="four"><img src="image-product-4-thumbnail.jpg" alt="one" class="fourimg"></div>
+          <div class="one"><img src="/image-product-1-thumbnail.jpg" alt="one" class="oneimg"></div>
+          <div class="two"><img src="/image-product-2-thumbnail.jpg" alt="one" class="twoimg"></div>
+          <div class="three"><img src="/image-product-3-thumbnail.jpg" alt="one" class="threeimg"></div>
+          <div class="four"><img src="/image-product-4-thumbnail.jpg" alt="one" class="fourimg"></div>
         </div>
       </div>
       <div class="text">
@@ -60,7 +82,7 @@
           <button type="button" class="add">+</button> 
         </div>
         <button class="addtocart">
-          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-solid fa-cart-shopping fa-cart-shoppingtwo"></i>
           <p class="addtocarttext"><pre>Add to cart</pre></p>
         </button>
       </div></div>
