@@ -41,34 +41,28 @@ function carticonf() {
     if (a === 0) {
         if (emptycart.style.display == "none") {
             emptycart.style.display = "block";
+            sliderightarrow.style.display = "none"
+            slideleftarrow.style.display = "none"
         }
         else if (emptycart.style.display = "block" || a > 0) {
             emptycart.style.display = "none";
+            sliderightarrow.style.display = "block"
+            slideleftarrow.style.display = "block"
         }
     }
     else {
         if (notanemptycart.style.display == "none") {
             notanemptycart.style.display = "block";
+            sliderightarrow.style.display = "none"
+            slideleftarrow.style.display = "none"
         }
         else if (notanemptycart.style.display = "block" || a == 0) {
             notanemptycart.style.display = "none";
+            sliderightarrow.style.display = "block"
+            slideleftarrow.style.display = "block"
         }
     }
 }
-
-// container=document.getElementsByClassName("container")
-// container.addEventListener("click",clickanywhereclose)
-// function clickanywhereclose(){
-//     if(notanemptycart.style.display = "block") {
-//         notanemptycart.style.display = "none";
-//     }
-//     if(emptycart.style.display = "block") {
-//         emptycart.style.display = "none";
-//     }
-// }
-
-
-
 
 
 // ADD TO CART
@@ -148,16 +142,16 @@ function slideleftarroww() {
     if (displayproductimageonem.style.display == "block") {
         displayproductimageonem.style.display = "none";
         displayproductimagefourm.style.display = "block";
-    }else if (displayproductimagetwom.style.display == "block") {
+    } else if (displayproductimagetwom.style.display == "block") {
         displayproductimagetwom.style.display = "none";
         displayproductimageonem.style.display = "block";
-    }else if (displayproductimagethreem.style.display == "block") {
+    } else if (displayproductimagethreem.style.display == "block") {
         displayproductimagethreem.style.display = "none";
         displayproductimagetwom.style.display = "block";
-    }else if (displayproductimagefourm.style.display == "block") {
+    } else if (displayproductimagefourm.style.display == "block") {
         displayproductimagefourm.style.display = "none";
         displayproductimagethreem.style.display = "block";
-    }else{
+    } else {
         console.log("wtf")
     }
 }
@@ -167,20 +161,47 @@ function sliderightarroww() {
     if (displayproductimageonem.style.display == "block") {
         displayproductimageonem.style.display = "none";
         displayproductimagetwom.style.display = "block";
-    }else if (displayproductimagetwom.style.display == "block") {
+    } else if (displayproductimagetwom.style.display == "block") {
         displayproductimagetwom.style.display = "none";
         displayproductimagethreem.style.display = "block";
     } else if (displayproductimagethreem.style.display == "block") {
         displayproductimagethreem.style.display = "none";
         displayproductimagefourm.style.display = "block";
-    }else if (displayproductimagefourm.style.display == "block") {
+    } else if (displayproductimagefourm.style.display == "block") {
         displayproductimagefourm.style.display = "none";
         displayproductimageonem.style.display = "block";
-    }else{
+    } else {
         console.log("wtf")
     }
 }
 
 
+// HAMBURGUR SCRIPT
 
+let hamburguricon = document.getElementsByClassName("hamburguricon")[0]
+let cancelicon = document.getElementsByClassName("cancelicon")[0]
+let hamburgerdiv = document.getElementsByClassName("hamburgerdiv")[0]
+
+hamburguricon.style.display = "block"
+cancelicon.style.display = "none"
+
+hamburguricon.addEventListener("click", hamburgurf)
+
+cancelicon.addEventListener("click", canceliconf)
+
+
+function hamburgurf() {
+    hamburgerdiv.style.display = "flex"
+    hamburguricon.style.display = "none"
+    cancelicon.style.display = "block"
+    sliderightarrow.style.display = "none"
+    slideleftarrow.style.display = "none"
+}
+function canceliconf() {
+    hamburguricon.style.display = "block"
+    cancelicon.style.display = "none"
+    hamburgerdiv.style.display = "none"
+    sliderightarrow.style.display = "block"
+    slideleftarrow.style.display = "block"
+}
 
