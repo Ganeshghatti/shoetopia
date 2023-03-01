@@ -65,17 +65,6 @@ function carticonf() {
 }
 
 
-// ADD TO CART
-// cartv = 0;
-// cart = document.getElementsByClassName("addtocart")[0]
-// cart.addEventListener("click", cartf)
-// function cartf() {
-//     if (cartv == 0) {
-
-//     }
-// }
-
-
 // // IMAGE VIEW
 
 let oneimg = document.getElementsByClassName("oneimg")[0]
@@ -205,3 +194,13 @@ function canceliconf() {
     slideleftarrow.style.display = "block"
 }
 
+// ADD TO CART
+
+cartv = 0;
+let addtocart = document.getElementsByClassName("addtocart")[0]
+addtocart.addEventListener("click", cartf)
+function cartf() {
+    console.log(a)
+    a++
+    document.getElementsByClassName("displayquantity")[0].innerHTML = a
+}
