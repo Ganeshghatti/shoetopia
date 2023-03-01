@@ -393,7 +393,9 @@ hr {
 .hamburgerdiv{
     display: none;
 }
-
+.hamburguricon,.cancelicon{
+    display: none;
+}
 
 
 @media screen and (max-width: 50rem) {
