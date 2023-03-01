@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .headder {
@@ -261,8 +261,12 @@ hr {
     justify-content: space-between;
     gap: 0.3rem;
 }
-
-
+.fa-solid{
+    padding-bottom: 0.5rem;
+}
+.incart,.addtocart{
+    box-shadow: 5px 5px rgb(165, 165, 167);
+}
 
 
 
