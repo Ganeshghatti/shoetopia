@@ -393,7 +393,7 @@ hr {
 .hamburgerdiv{
     display: none;
 }
-.hamburguricon,.cancelicon{
+.hamburguricon  button,.cancelicon button{
     display: none;
 }
 
