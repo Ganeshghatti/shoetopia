@@ -1,3 +1,6 @@
+body{
+    z-index: 50;
+}
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +21,7 @@
 
 .logo {
     padding-left: 2rem;
+    cursor: pointer;
 }
 
 ul {
@@ -36,7 +40,9 @@ ul {
     text-decoration: none;
     color: rgb(165, 165, 167);
 }
-
+.headder ul li a:hover{
+    text-decoration: underline hsl(26, 100%, 55%) 2px;
+}
 .headder ul li {
     list-style: none;
 }
@@ -59,6 +65,7 @@ ul {
     background-color: inherit;
     font-size: 1.2rem;
     cursor: pointer;
+    z-index: 200;
 }
 #emptycart{
     position: absolute;
@@ -144,6 +151,101 @@ ul {
     font-size: clamp(0.8rem, 3vw, 1rem);
 }
 
+.imgviewonpc{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    display: none;
+}
+.bigimgandleftrightarrowpc{
+    display: flex;
+    align-items:center;
+    justify-content:center ;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 17%;
+}
+.bigimagepc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.displayproductimagetwopc,.displayproductimagethreepc,.displayproductimagefourpc{
+    display: none;
+}
+.displayproductimagepc{
+    width: 38%;
+    border-radius: 1rem;
+    z-index: 125;
+}
+.miniviewspc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.3rem;
+    z-index: 125;
+    position: absolute;
+    top: 63%;
+}
+
+.miniviewspc div img {
+    width: 5vw;
+    border-radius: 1rem;
+    margin: auto;
+    cursor: pointer;
+}
+/* .slideleftrightarrowpc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+} */
+.canceliconpc{
+    position: absolute;
+    left: 63%;
+    top: 15%;
+    z-index: 125;
+    display: none;
+}
+.sliderightarrowpc,.slideleftarrowpc,.fa-xmarkpc{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.slideleftarrowdivpc button,.sliderightarrowdivpc button,.canceliconpc button{
+    border:none;
+    background-color: inherit;
+    z-index: 125;
+}
+.slideleftarrowdivpc,.sliderightarrowdivpc{
+    z-index: 125;
+    position: absolute;
+}
+.slideleftarrowdivpc{
+    margin-right: 25%;
+    z-index: 150;
+}
+.sliderightarrowdivpc{
+    margin-left: 25%;
+}
+/* .slideleftarrowdivpc{
+    z-index: 125;
+} */
+/* .slideleftarrowdivpc{
+    position: absolute;
+    left: 36.5%;
+}
+.sliderightarrowdivpc{
+    position: absolute;
+    left: 61.5%;
+}
+.slideleftarrowdivpc,.sliderightarrowdivpc{
+    top: 30%;
+} */
+
 
 
 hr {
@@ -212,6 +314,7 @@ hr {
 .bigimage {
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 .bigimagem,.slideleftarrow,.sliderightarrow{
     display: none;
@@ -219,6 +322,10 @@ hr {
 
 .displayproductimage {
     max-width: 50%;
+}
+#borderandopacity{
+    opacity: 50%;
+    border:hsl(26, 100%, 55%) 3px solid ;
 }
 .oneimg:hover{
     opacity: 50%;
@@ -236,7 +343,9 @@ hr {
     opacity: 50%;
     border:hsl(26, 100%, 55%) 3px solid ;
 }
-
+.miniviewspc div img:hover{
+    border:hsl(26, 100%, 55%) 3px solid ;
+}
 
 .displayproductimagetwo,.displayproductimagethree,.displayproductimagefour{
     display: none;
@@ -386,17 +495,35 @@ hr {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:black;
-    z-index: 5;
+    z-index: -1;
+    display: none;
 }
 
 .hamburgerdiv{
     display: none;
 }
-.hamburguricon  button,.cancelicon button{
+.hamburguricon ,.cancelicon button{
     display: none;
 }
-
+.overlaytwo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color:rgba(0, 0, 0, 0.622);
+    display: none;
+}
+/* .overlaythree{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: none;
+} */
 
 @media screen and (max-width: 50rem) {
     .headder{
@@ -468,12 +595,14 @@ hr {
         max-width: 200%;
         width: 95%;
         left: 1.5%;
+        z-index: 175;
     }
     #notanemptycart{
         margin: auto;
         max-width: 200%;
         width: 95%;
         left: 1.5%;
+        z-index: 175;
     }
     .productnameincart,.pricedivinsidecart{
         margin: auto;
@@ -495,12 +624,12 @@ hr {
         display: block;
         transform: translateY(-50%);
     }
-    .fa-circle-arrow-left,.fa-circle-arrow-right{
+    .fa-circle-arrow-leftm,.fa-circle-arrow-rightm{
         cursor: pointer;
         position: absolute;
         font-size: 2rem;
     }
-    .fa-circle-arrow-right{
+    .fa-circle-arrow-rightm{
         right: 3%;    
     }
     .hamburgerdiv{
@@ -510,7 +639,6 @@ hr {
         width: 80%;
         background-color: white;
         box-shadow: 5px 5px rgba(0, 0, 0, 0.315);
-        display: none;
         flex-direction: column;
         justify-content: center;
     }
@@ -543,14 +671,20 @@ hr {
         position: absolute;
         top: 20%;
         left: 5%;
-        z-index: 5;
+        z-index: 25;
         background-color: white;
+    }
+    .hamburguricon ,.cancelicon button{
+        display: block;
     }
     .hamburguricon button,.cancelicon button{
         border: none;
         cursor: pointer;
     }
-    .fa-bars,.fa-xmark{
+    .fa-bars,.fa-xmarkm{
         font-size: 2rem;
+    }
+    .imgviewonpc,.canceliconpc,.overlaytwo,.overlay{
+        display: none;
     }
 }
