@@ -237,7 +237,7 @@ let imgviewonpc = document.getElementsByClassName("imgviewonpc")[0]
 let overlaytwo = document.getElementsByClassName("overlaytwo")[0]
 let displayproductimage = document.getElementById("displayproductimage")
 
-displayproductimage.addEventListener("click", bigimagepcvieww)
+bigimage.addEventListener("click", bigimagepcvieww)
 
 function bigimagepcvieww() {
     imgviewonpc.style.display = "flex"
